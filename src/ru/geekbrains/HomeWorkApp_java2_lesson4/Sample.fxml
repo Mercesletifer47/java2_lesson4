@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.HomeWorkApp_java2_lesson4.Controller">
+    <children>
+        <Button mnemonicParsing="false" text="Button" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+        <Button mnemonicParsing="false" text="Enter" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+        <CheckBox mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
+        <CheckBox mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0" />
+        <CheckBox layoutX="14.0" layoutY="130.0" mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0" />
+    </children>
+</AnchorPane>
+
