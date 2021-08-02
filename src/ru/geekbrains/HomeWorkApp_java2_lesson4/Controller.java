@@ -2,24 +2,27 @@ package ru.geekbrains.HomeWorkApp_java2_lesson4;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class Controller {
     @FXML
-    public TextField textField;
+    private Button sendMessage;
     @FXML
-    public TextArea textArea;
-
+    private Button deleteMessage;
     @FXML
-    public void sendHello() {
-        System.out.println("Hello");
+    private TextArea generalTextArea;
+    @FXML
+    private TextField myTextField;
+    @FXML
+    public void deleteMessage() {
+        myTextField.clear();
     }
-
     @FXML
-    public void sendMsg(ActionEvent actionEvent) {
-        textArea.appendText(textField.getText()+"\n");
-        textField.clear();
-        textField.requestFocus();
+    public void sendMessage(ActionEvent actionEvent) {
+        generalTextArea.appendText(System.getProperty("user.name") + ": " + myTextField.getText()+"\n");
+        myTextField.clear();
+        myTextField.requestFocus();
     }
 }

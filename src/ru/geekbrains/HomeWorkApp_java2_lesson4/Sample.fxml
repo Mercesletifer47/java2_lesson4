@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.HomeWorkApp_java2_lesson4.Controller">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.HomeWorkApp_java2_lesson4.Controller">
     <children>
-        <Button mnemonicParsing="false" text="Button" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
-        <Button mnemonicParsing="false" text="Enter" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
-        <CheckBox mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
-        <CheckBox mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0" />
-        <CheckBox layoutX="14.0" layoutY="130.0" mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0" />
+        <Pane prefHeight="400.0" prefWidth="400.0">
+            <children>
+                <Button fx:id="sendMessage" layoutX="93.0" layoutY="361.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="25.0" prefWidth="100.0" text="Отправить" />
+                <Button fx:id="deleteMessage" layoutX="195.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteMessage" prefHeight="25.0" prefWidth="100.0" text="Стереть"/>
+                <TextArea fx:id="generalTextArea" prefHeight="303.0" prefWidth="400.0" />
+                <TextField fx:id="myTextField" layoutY="303.0" prefHeight="58.0" prefWidth="400.0" />
+            </children>
+        </Pane>
     </children>
 </AnchorPane>
 
